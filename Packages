@@ -56,6 +56,22 @@ Homepage: https://github.com/flightaware
 Description: Open Aviation Data Exchange Protocol for ADS-B FlightFeeders
   The client-side portion of fa_adept that sends aviation data via TCL sockets.
 
+Package: piaware-web
+Version: 9.0
+Architecture: all
+Maintainer: FlightAware Developers <adsb-devs@flightaware.com>
+Installed-Size: 371
+Depends: lighttpd
+Filename: ./piaware-web_9.0_all.deb
+Size: 87304
+MD5sum: 86848bbf22973a13c374843372f97862
+SHA1: 69dd2551ea69701e89ba112a8e1515cd2c767829
+SHA256: d3a7b5c150c234c76e2e91f3ce86f90b0a944a4028e44cce28a2a73677fee3cd
+Section: embedded
+Priority: extra
+Homepage: https://github.com/flightaware
+Description: PiAware landing webpage
+
 Package: skyaware978
 Source: dump978-fa
 Version: 9.0
