@@ -1,14 +1,33 @@
 Package: dump1090-fa
-Version: 10.0
+Version: 10.0.1
+Architecture: arm64
+Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
+Installed-Size: 11973
+Depends: libbladerf2 (>= 0.2022.11), libc6 (>= 2.34), libhackrf0 (>= 2022.09.1), liblimesuite22.09-1 (>= 22.09.1+dfsg), libncurses6 (>= 6), librtlsdr0 (>= 0.6.0), libsoapysdr0.8 (>= 0.8.1), libtinfo6 (>= 6), adduser, lighttpd
+Filename: ./dump1090-fa_10.0.1_arm64.deb
+Size: 2199548
+MD5sum: 2b71df35893ad94359d988ab991c6047
+SHA1: c46609aff86ef9a4a5e5bcc2e7ddbf35722bd96a
+SHA256: e7868e4e32e78eaa5bf10401fc3b181f3f912d41579d5667f5f436f0d3fa6b2f
+Section: embedded
+Priority: extra
+Homepage: http://www.flightaware.com/
+Description: FlightAware ADS-B Ground Station System for SDRs
+ Networked Aviation Mode S / ADS-B decoder/translator with support
+ for RTL-SDR, BladeRF, HackRF, and LimeSDR software defined radio USB
+ device support.
+
+Package: dump1090-fa
+Version: 10.0.1
 Architecture: amd64
 Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
 Installed-Size: 11901
 Depends: libbladerf2 (>= 0.2022.11), libc6 (>= 2.34), libhackrf0 (>= 2022.09.1), liblimesuite22.09-1 (>= 22.09.1+dfsg), libncurses6 (>= 6), librtlsdr0 (>= 0.6.0), libsoapysdr0.8 (>= 0.8.1), libtinfo6 (>= 6), adduser, lighttpd
-Filename: ./dump1090-fa_10.0_amd64.deb
-Size: 2217596
-MD5sum: 85c95fea56de980586688a7b154652d0
-SHA1: add61ae0a1a91ada61103d916761aed78eac2a6e
-SHA256: 997085766434376a3fa4871ef1f9aa9498cb11df4589ec31c43c9457748b98c5
+Filename: ./dump1090-fa_10.0.1_amd64.deb
+Size: 2207608
+MD5sum: 22725c1084548edd40c43f87aa723061
+SHA1: 114d026f5324e27be436e6528bfaece0e5aadb33
+SHA256: 47198758d49a6e1cb22465e51758e98e08321555baf0cabe5d94acd0ba007ddd
 Section: embedded
 Priority: extra
 Homepage: http://www.flightaware.com/
@@ -18,17 +37,36 @@ Description: FlightAware ADS-B Ground Station System for SDRs
  device support.
 
 Package: dump978-fa
-Version: 10.0
+Version: 10.0.1
+Architecture: arm64
+Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
+Installed-Size: 612
+Depends: libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libsoapysdr0.8 (>= 0.8.1), libstdc++6 (>= 11), adduser
+Recommends: skyaware978, soapysdr-module-rtlsdr
+Filename: ./dump978-fa_10.0.1_arm64.deb
+Size: 177404
+MD5sum: 0fe30c2bfa9ad82bba2f7206c55e7dc3
+SHA1: 6cb4bf1aafaaa78aba3a4145c76ae205d7e5a32c
+SHA256: 56190ade4d0952b2940ab414bb22cb3b295435bb20f2fd09ea756d85bb0c2289
+Section: embedded
+Priority: extra
+Homepage: http://www.flightaware.com/
+Description: ADS-B UAT Ground Station System
+ .
+ FlightAware's SDR decoder for UAT ADS-B messages on 978MHz.
+
+Package: dump978-fa
+Version: 10.0.1
 Architecture: amd64
 Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
 Installed-Size: 589
 Depends: libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libsoapysdr0.8 (>= 0.8.1), libstdc++6 (>= 11), adduser
 Recommends: skyaware978, soapysdr-module-rtlsdr
-Filename: ./dump978-fa_10.0_amd64.deb
-Size: 195560
-MD5sum: f1614ff18ae22871b9f63d55fa754fb0
-SHA1: 1e0055ad85144f555a8150e567bd3fafd0f45b62
-SHA256: 828c43cc323028167d20476e75aa73119436a46efe878f9a7a8ea1d4c0ba90d5
+Filename: ./dump978-fa_10.0.1_amd64.deb
+Size: 195336
+MD5sum: 72544eff8cafbb81352d7d10f587b31f
+SHA1: 3390aeffd98cd71993ef60d01ae360f1be6f22ff
+SHA256: eb25422ac07d2b82b8c0370cee0c01db7ee97012d0fb9b65bbe26a0b82bbb709
 Section: embedded
 Priority: extra
 Homepage: http://www.flightaware.com/
@@ -37,7 +75,7 @@ Description: ADS-B UAT Ground Station System
  FlightAware's SDR decoder for UAT ADS-B messages on 978MHz.
 
 Package: piaware
-Version: 10.0
+Version: 10.0.1
 Architecture: amd64
 Maintainer: FlightAware Developers <adsb-devs@flightaware.com>
 Installed-Size: 19954
@@ -45,11 +83,31 @@ Depends: libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-ic
 Suggests: dump1090-fa, dump978-fa
 Conflicts: fa-mlat-client
 Replaces: fa-mlat-client
-Filename: ./piaware_10.0_amd64.deb
-Size: 5191712
-MD5sum: 2bbb06919563f921b28b3f0a09a59bf3
-SHA1: f344f2bd3389f4d8930cfce4fc5dfad2599d6ecb
-SHA256: 81b41f27233cc3935e79e5cdd207d57e4be13cff4ce97ac8eb78709000e4851c
+Filename: ./piaware_10.0.1_amd64.deb
+Size: 5191220
+MD5sum: db5de40a7f2d3e78b7747d18a8f76412
+SHA1: c095d0abad63d7283e208c95be2c3f3aa6db633e
+SHA256: 167af89cb87d2641fd8e54f6d7a8c822f155d47972ff0492e30f454f0ab4e999
+Section: embedded
+Priority: extra
+Homepage: https://github.com/flightaware
+Description: Open Aviation Data Exchange Protocol for ADS-B FlightFeeders
+  The client-side portion of fa_adept that sends aviation data via TCL sockets.
+
+Package: piaware
+Version: 10.0.1
+Architecture: arm64
+Maintainer: FlightAware Developers <adsb-devs@flightaware.com>
+Installed-Size: 21173
+Depends: libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libbz2-1.0, libc6 (>= 2.35), libexpat1 (>= 2.1~beta3), libffi8 (>= 3.4), libgcc-s1 (>= 3.0), liblzma5 (>= 5.1.1alpha+20120614), libreadline8 (>= 7.0~beta), libssl3 (>= 3.0.0), libstdc++6 (>= 11), libtcl8.6 (>= 8.6.0), zlib1g (>= 1:1.2.0), net-tools, iproute2, tclx8.4, tcl8.6, tcllib, tcl-tls (>= 1.7.22-2+fa1), itcl3, rsyslog
+Suggests: dump1090-fa, dump978-fa
+Conflicts: fa-mlat-client
+Replaces: fa-mlat-client
+Filename: ./piaware_10.0.1_arm64.deb
+Size: 4987828
+MD5sum: 71038c1429343340f6dcfd8371e7ce09
+SHA1: 3f56b0b52293d4daffe7600adefa1a63db1103ff
+SHA256: c5c5a0e1e9d2901bca1068b713cca9489091335e9513881852ea74e1c752cee4
 Section: embedded
 Priority: extra
 Homepage: https://github.com/flightaware
@@ -57,16 +115,16 @@ Description: Open Aviation Data Exchange Protocol for ADS-B FlightFeeders
   The client-side portion of fa_adept that sends aviation data via TCL sockets.
 
 Package: piaware-web
-Version: 10.0
+Version: 10.0.1
 Architecture: all
 Maintainer: FlightAware Developers <adsb-devs@flightaware.com>
 Installed-Size: 371
 Depends: lighttpd
-Filename: ./piaware-web_10.0_all.deb
-Size: 87340
-MD5sum: e536eb290503e25f08fc980289e7d29d
-SHA1: 9582a251ba23b470ca431959df33ece479d7feb5
-SHA256: 83552dbb2d6a45fffc0094e9ab125bad761cfc2181bc8afca222416079cae213
+Filename: ./piaware-web_10.0.1_all.deb
+Size: 87344
+MD5sum: 63a4f6c2bcecf97518c84ec34f50d24c
+SHA1: f4046f5d14f0a6dbf66fdd4eeb7018690a1fc937
+SHA256: e64a85dc70f57f5eeb5c63cce5963228c459f6ca5fb5d33e53c76f0d412c3bbd
 Section: embedded
 Priority: extra
 Homepage: https://github.com/flightaware
@@ -74,18 +132,39 @@ Description: PiAware landing webpage
 
 Package: skyaware978
 Source: dump978-fa
-Version: 10.0
+Version: 10.0.1
 Architecture: amd64
 Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
 Installed-Size: 14411
 Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), adduser, lighttpd
 Breaks: skyview978 (<< 3.7.2~)
 Replaces: skyview978 (<< 3.7.2~)
-Filename: ./skyaware978_10.0_amd64.deb
-Size: 2546492
-MD5sum: 01de672f8231dd779deaf1f0ae0e9e67
-SHA1: dde755ad35b57034feda9d74457dc9b9c043f9a9
-SHA256: e3efa27daed1c31550016ba32796e54f8abe1c1a40bcae11c1b860b14e5583bc
+Filename: ./skyaware978_10.0.1_amd64.deb
+Size: 2548196
+MD5sum: 0f1ae9e3dc96208f0c79a01d0e466bd5
+SHA1: c6803cbb603a9dd07603a79a0827028b51451f34
+SHA256: 94e106790e18858cb603ac836fb6a856268f2381e5689dbb8db48b45ce18bca0
+Section: embedded
+Priority: extra
+Homepage: http://www.flightaware.com/
+Description: Local web interface for dump978
+ .
+ Provides a web interface to display aircraft data received from dump978.
+
+Package: skyaware978
+Source: dump978-fa
+Version: 10.0.1
+Architecture: arm64
+Maintainer: Oliver Jowett <oliver.jowett@flightaware.com>
+Installed-Size: 14415
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), adduser, lighttpd
+Breaks: skyview978 (<< 3.7.2~)
+Replaces: skyview978 (<< 3.7.2~)
+Filename: ./skyaware978_10.0.1_arm64.deb
+Size: 2536108
+MD5sum: 5690c2182205d5f3df1a943dd59cd313
+SHA1: 70295c6e88ce45a55bbaf595f68ad1e5d0859a08
+SHA256: 97b99a97610245c656555df4ca6d337cd677a70bf7ab61ce661b7edc49cdc240
 Section: embedded
 Priority: extra
 Homepage: http://www.flightaware.com/
